@@ -12,7 +12,7 @@ final readonly class IssueHere
     /** @return list<array<string, mixed>> */
     private function commonConfig(): array
     {
-        $defaults = nullable(mixed()) ?? [];
+        $defaults = nullable(mixed());
 
         return [
             ...$scrapeConfigs
