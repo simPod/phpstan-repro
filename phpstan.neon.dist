@@ -3,6 +3,3 @@ parameters:
     paths:
         - %currentWorkingDirectory%/src
         - %currentWorkingDirectory%/tests
-
-    doctrine:
-        objectManagerLoader: tests/doctrine-orm-object-manager-bootstrap.php
