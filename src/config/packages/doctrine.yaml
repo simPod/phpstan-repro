@@ -1,0 +1,12 @@
+doctrine:
+  dbal:
+    url: "pgsql://localhost"
+    platform_service: Doctrine\DBAL\Platforms\PostgreSQLPlatform
+
+  orm:
+    mappings:
+      Foo:
+        dir: "%kernel.project_dir%/src/Entity"
+        is_bundle: false
+        prefix: Foo\Bar\Entity
+        type: attribute

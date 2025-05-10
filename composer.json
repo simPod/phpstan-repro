@@ -1,0 +1,50 @@
+{
+    "name": "foo/bar",
+    "description": "foo bar",
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "php": "^8.3",
+        "azjezz/psl": "^3.2.0",
+        "doctrine/dbal": "^4.2.3",
+        "doctrine/doctrine-bundle": "^2.14.0",
+        "doctrine/orm": "^3.3.3",
+        "symfony/config": "^7.2.6",
+        "symfony/console": "^7.2.6",
+        "symfony/contracts": "^3.5.2",
+        "symfony/dependency-injection": "^7.2.6",
+        "symfony/error-handler": "^7.2.5",
+        "symfony/framework-bundle": "^7.2.5",
+        "symfony/http-foundation": "^7.2.6",
+        "symfony/runtime": "^7.2.3",
+        "symfony/security-bundle": "^7.2.3",
+        "symfony/security-core": "^7.2.6",
+        "symfony/security-http": "^7.2.6",
+        "symfony/yaml": "^7.2.6"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.4.3",
+        "phpstan/phpstan": "^2.1.14",
+        "phpstan/phpstan-doctrine": "^2.0.3",
+        "symfony/doctrine-bridge": "^7.2.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Foo\\Bar\\": [
+                "src/"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Foo\\Bar\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "symfony/runtime": false
+        },
+        "sort-packages": true
+    }
+}
